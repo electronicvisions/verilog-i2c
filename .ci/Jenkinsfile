@@ -1,0 +1,8 @@
+@Library("jenlib") _
+
+wafDefaultPipeline(projects: ["verilog-i2c"],
+                   container: [image: getDefaultAsicContainerPath(),
+                               app: "asic"],
+                   enableClangFormat: false,
+                   enableClangTidy: false,
+                   notificationChannel: "#dls-fpga")

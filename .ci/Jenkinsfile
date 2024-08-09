@@ -5,4 +5,5 @@ wafDefaultPipeline(projects: ["verilog-i2c"],
                                app: "asic"],
                    enableClangFormat: false,
                    enableClangTidy: false,
+                   enableCppcheck: false,
                    notificationChannel: "#dls-fpga")

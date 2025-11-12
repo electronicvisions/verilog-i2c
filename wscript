@@ -10,7 +10,7 @@ def options(opt):
 
 
 def configure(cfg):
-    cfg.env.append_value("PYTHON", "python3")
+    cfg.load("python")
     cfg.check_python_version((3,))
     cfg.load("pytest")
 
